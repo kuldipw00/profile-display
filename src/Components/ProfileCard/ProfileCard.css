@@ -1,0 +1,116 @@
+.profile-card {
+    display: inline-block;
+    width: calc(25% - 20px);
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+  }
+
+  .profile-info {
+    background-color: #ffffff;
+    margin-top: 2rem;
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #e5e5e5;
+    background-color: #f5f5f5;
+  }
+  
+  .card-footer button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  .card-footer button:hover {
+    color: #1890ff;
+  }
+  .card-cover {
+    position: relative; /* make the element position relative */
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .avatar {
+    position: absolute; /* make the element position absolute */
+    bottom: -20px; /* set the bottom position to negative height of avatar */
+    left: 50%; /* center the element horizontally */
+    transform: translateX(-50%); /* adjust horizontally centered position */
+    width: 150px; /* increase the width of avatar */
+    height: 150px; /* increase the height of avatar */
+    background-color: transparent;
+  }
+  .like-icon-outlined{
+    color: red;
+    font-size: 25px;
+  }
+  .like-icon-filled {
+    color: red;
+    font-size: 25px;
+  }
+  .action-icon{
+    font-size: 25px;
+  }
+  .ant-card-actions {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #fafafa !important;
+    border-top: 1px solid #e8e8e8 !important;
+    zoom: 1;
+  }
+  p{
+    margin: 0;
+    
+  }
+  /* For screens smaller than 576px */
+@media (max-width: 576px) {
+    .profile-card {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .card-cover {
+      border-radius: 8px;
+    }
+  
+    .profile-info {
+      border-radius: 8px;
+    }
+
+  
+    .card-footer {
+      flex-direction: column;
+      padding: 5px 0;
+    }
+  
+    .card-footer button {
+      margin: 5px 0;
+    }
+  }
+  
+  /* For screens larger than 576px */
+  @media (min-width: 576px) {
+    .profile-card {
+      width: calc(50% - 20px);
+      margin: 10px;
+    }
+  }
+  
+  /* For screens larger than 992px */
+  @media (min-width: 992px) {
+    .profile-card {
+      width: calc(33.33% - 150px);
+      margin: 10px;
+    }
+    .card-container {
+      width: 1288px;
+    }
+  }
+  
